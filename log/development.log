@@ -5176,3 +5176,294 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 22:44:31 -0700
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-10-10 23:06:06 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (5ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:06:09 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 321ms (Views: 162.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:10 -0700
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:10 -0700
+Served asset /application.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:10 -0700
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/locations/5/people" for 127.0.0.1 at 2012-10-10 23:06:12 -0700
+Processing by LocationsController#find_users as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "checkins" ON "users"."id" = "checkins"."user_id" WHERE "checkins"."location_id" = 5[0m
+  Rendered locations/find_users.html.haml within layouts/application (137.2ms)
+Completed 200 OK in 260ms (Views: 141.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:12 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:12 -0700
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:06:14 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:14 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:15 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/6/people" for 127.0.0.1 at 2012-10-10 23:06:16 -0700
+Processing by LocationsController#find_users as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "checkins" ON "users"."id" = "checkins"."user_id" WHERE "checkins"."location_id" = 6
+  Rendered locations/find_users.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:16 -0700
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:16 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:06:18 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:18 -0700
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/7/people" for 127.0.0.1 at 2012-10-10 23:06:20 -0700
+Processing by LocationsController#find_users as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "checkins" ON "users"."id" = "checkins"."user_id" WHERE "checkins"."location_id" = 7[0m
+  Rendered locations/find_users.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:20 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:06:22 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:22 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/locations/8/people" for 127.0.0.1 at 2012-10-10 23:06:24 -0700
+Processing by LocationsController#find_users as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "checkins" ON "users"."id" = "checkins"."user_id" WHERE "checkins"."location_id" = 8
+  Rendered locations/find_users.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:24 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:24 -0700
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:06:25 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:06:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:25 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:06:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:07:05 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:07:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:05 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/locations/5/people" for 127.0.0.1 at 2012-10-10 23:07:09 -0700
+Processing by LocationsController#find_users as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "checkins" ON "users"."id" = "checkins"."user_id" WHERE "checkins"."location_id" = 5
+  Rendered locations/find_users.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:07:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:09 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-10 23:07:11 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (1.9ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-10 23:07:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:11 -0700
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-10 23:07:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
