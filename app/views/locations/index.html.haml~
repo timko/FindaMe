@@ -1,0 +1,16 @@
+%h1 All Locations
+
+%table#locations
+  %thead
+    %tr
+      %th Name
+      %th Latitude
+      %th Longitude
+      %th People
+  %tbody
+    - @locations.each do |location|
+      %tr
+        %td= location.name 
+        %td= location.latitude
+        %td= location.longitude
+        %td= link_to 'Check who\'s here', find_nearby_people_path

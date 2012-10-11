@@ -1,0 +1,12 @@
+%h1 Look Who's At #{@location.name}!
+
+%table#locations
+  %thead
+    %tr
+      %th Name
+  %tbody
+    - @users.each do |location|
+      %tr
+        %td= location.name
+
+= link_to 'Go Back', locations_path

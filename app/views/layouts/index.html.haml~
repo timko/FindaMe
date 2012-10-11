@@ -1,0 +1,16 @@
+%h1 All Locations
+
+%table#locations
+  %thead
+    %tr
+      %th Name
+      %th Latitude
+      %th Longitude
+  %tbody
+    - @location.each do |movie|
+      %tr
+        %td= location.name 
+        %td= location.latitude
+        %td= location.longitude
+
+= link_to 'Add new movie', new_movie_path
