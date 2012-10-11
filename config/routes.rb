@@ -1,5 +1,25 @@
 FindMe::Application.routes.draw do
-  # The priority is based upon order of creation:
+ 
+  # Route for /
+  root :to => "home#index"
+  
+  # Misc Routes
+  match "login" => "sessions#new", :as => "login"
+  match "logout" => "sessions#destroy", :as => "logout"
+  match "signup" => "users#new", :as => "signup"
+
+  # Dasboard
+  match "dashboard" => "app#dashboard", :as => "dashboard", :via => :get
+
+  # Resourceful routes
+  resources :users, :only => [:new, :create]
+  resources :sessions, :only => [:new, :create, :destroy]
+  resources :locations
+
+  #Location Routes; used the built-in resources method to create the std CRUD routes
+  match 'locations/:id/people' => 'locations#find_users', :as => :find_nearby_people
+
+ # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
@@ -9,14 +29,9 @@ FindMe::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-  
-
-  match 'locations/:id/people' => 'locations#find_users', :as => :find_nearby_people
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
-  resources :locations
 
   # Sample resource route with options:
   #   resources :products do

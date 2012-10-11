@@ -1,0 +1,5 @@
+-@posts.each do |posts|
+  =render "posts/posts", :posts => posts 
+-if @posts.empty?
+  There are no posts in your feed... =( <br />
+  Follow more <a href="/locations">locations</a> to see more posts in your feed!
