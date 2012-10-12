@@ -4,8 +4,8 @@ class LocationsController < ApplicationController
 #within the findMe directory
 
   def index
+    redirect_guests #use this to ensure only logged in users can view the website
     @locations = Location.all
-    render 'locations/index'
   end
 
   def create
@@ -35,6 +35,7 @@ class LocationsController < ApplicationController
   #           appropriate attributes of the users, those attributes being:
   #    :name => a string that represents their name
   def find_users
+    redirect_guests
     loc = Location.find(params[:id])
     @location = loc
     @users = loc.users

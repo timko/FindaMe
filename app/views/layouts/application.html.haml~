@@ -1,13 +1,16 @@
 !!! 5
+-if not current_user
+  =render 'home/index'
 %html
   %head
-    %title Finda Me!
-    = stylesheet_link_tag 'application'
+    %title Finda Me
+    = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
   %body
-    %h1.title Finda Me!
+    =render :partial => 'header'
+    %h1
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]

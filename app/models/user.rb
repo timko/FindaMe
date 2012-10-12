@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_secure_password
 
   #other stuff...
-  attr_accessible :email, :name, :pwd
+  attr_accessible :email, :name, :password
   validates :name, :presence => true
   validates :email, :presence => true, :uniqueness => true
   validates :password, :presence  => true

@@ -1,7 +1,7 @@
 FindMe::Application.routes.draw do
  
   # Route for /
-  root :to => "home#index"
+  root :to => "locations#index"
   
   # Misc Routes
   match "login" => "sessions#new", :as => "login"

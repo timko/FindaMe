@@ -6,4 +6,11 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
+  def redirect_guests
+    if not current_user
+      redirect_to root_path
+    end
+  end
+  helper_method :redirect_guests
+
 end

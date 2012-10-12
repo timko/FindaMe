@@ -6,17 +6,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users =  [{:name => 'Merriam', :email => 'Brandybuck', :pwd => 'studio'},
-          {:name => 'Peregrin', :email => 'Took', :pwd => 'studio'},
-    	  {:name => 'Racinda', :email => 'Jules', :pwd => 'studio'},
-    	  {:name => 'Davy', :email => 'Grohlton', :pwd => 'studio'},
-      	  {:name => 'Ned', :email => 'Bender', :pwd => 'studio'},
-      	  {:name => 'Bill', :email => 'Golds', :pwd => 'studio'},
-      	  {:name => 'Patton', :email => 'Smudge', :pwd => 'studio'},
-      	  {:name => 'Ty', :email => 'Hawkstone', :pwd => 'studio'},
-      	  {:name => 'Fritz', :email => 'Steel', :pwd => 'studio'},
-      	  {:name => 'Christopher', :email => 'Mishomotohama', :pwd => 'studio'},
-      	  {:name => 'Graham', :email => 'Jefferson', :pwd => 'studio'},
+users =  [{:name => 'Merriam', :email => 'Brandybuck', :password => 'studio'},
+          {:name => 'Peregrin', :email => 'Took', :password => 'studio'},
+    	  {:name => 'Racinda', :email => 'Jules', :password => 'studio'},
+    	  {:name => 'Davy', :email => 'Grohlton', :password => 'studio'},
+      	  {:name => 'Ned', :email => 'Bender', :password => 'studio'},
+      	  {:name => 'Bill', :email => 'Golds', :password => 'studio'},
+      	  {:name => 'Patton', :email => 'Smudge', :password => 'studio'},
+      	  {:name => 'Ty', :email => 'Hawkstone', :password => 'studio'},
+      	  {:name => 'Fritz', :email => 'Steel', :password => 'studio'},
+      	  {:name => 'Christopher', :email => 'Mishomotohama', :password => 'studio'},
+      	  {:name => 'Graham', :email => 'Jefferson', :password => 'studio'},
   	 ]
 
 locations = [{:name => 'Berkeley', :latitude => 1.1, :longitude => 2.2},
@@ -33,9 +33,9 @@ locations.each do |location|
   Location.create(location)
 end
 
-berk_id = locations[0].id
-eisen_id = locations[2].id
-sd_id = locations[3].id
+berk_id = Location.find_by_name('Berkeley').id
+eisen_id = Location.find_by_name('Eisengard').id
+sd_id = Location.find_by_name('San Diego').id
 
 m_id = User.find_by_name('Merriam').id
 pe_id = User.find_by_name('Peregrin').id

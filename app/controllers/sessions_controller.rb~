@@ -2,10 +2,11 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_email(params[:session][:email])
-    if user && user.authenticate(params[:session][:pwd])
+    if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       redirect_to root_path
     else
+      flash[:warning]= "did not work"
       render :new
     end
   end

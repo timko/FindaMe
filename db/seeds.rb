@@ -6,17 +6,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users =  [{:name => 'Merriam', :email => 'Brandybuck', :pwd => 'studio'},
-          {:name => 'Peregrin', :email => 'Took', :pwd => 'studio'},
-    	  {:name => 'Racinda', :email => 'Jules', :pwd => 'studio'},
-    	  {:name => 'Davy', :email => 'Grohlton', :pwd => 'studio'},
-      	  {:name => 'Ned', :email => 'Bender', :pwd => 'studio'},
-      	  {:name => 'Bill', :email => 'Golds', :pwd => 'studio'},
-      	  {:name => 'Patton', :email => 'Smudge', :pwd => 'studio'},
-      	  {:name => 'Ty', :email => 'Hawkstone', :pwd => 'studio'},
-      	  {:name => 'Fritz', :email => 'Steel', :pwd => 'studio'},
-      	  {:name => 'Christopher', :email => 'Mishomotohama', :pwd => 'studio'},
-      	  {:name => 'Graham', :email => 'Jefferson', :pwd => 'studio'},
+users =  [{:name => 'Merriam', :email => 'Brandybuck@gmail.com', :password => 'studio'},
+          {:name => 'Peregrin', :email => 'Took@gmail.com', :password => 'studio'},
+    	  {:name => 'Racinda', :email => 'Jules@gmail.com', :password => 'studio'},
+    	  {:name => 'Davy', :email => 'Grohlton@gmail.com', :password => 'studio'},
+      	  {:name => 'Ned', :email => 'Bender@gmail.com', :password => 'studio'},
+      	  {:name => 'Bill', :email => 'Golds@gmail.com', :password => 'studio'},
+      	  {:name => 'Patton', :email => 'Smudge@gmail.com', :password => 'studio'},
+      	  {:name => 'Ty', :email => 'Hawkstone@gmail.com', :password => 'studio'},
+      	  {:name => 'Fritz', :email => 'Steel@gmail.com', :password => 'studio'},
+      	  {:name => 'Christopher', :email => 'Mishomotohama@gmail.com', :password => 'studio'},
+      	  {:name => 'Graham', :email => 'Jefferson@gmail.com', :password => 'studio'},
   	 ]
 
 locations = [{:name => 'Berkeley', :latitude => 1.1, :longitude => 2.2},
