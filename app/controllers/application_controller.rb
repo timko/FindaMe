@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   def redirect_guests
     if not current_user
-      redirect_to root_path
+      redirect_to root_path and return
     end
   end
   helper_method :redirect_guests

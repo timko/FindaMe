@@ -7,6 +7,9 @@ FindMe::Application.routes.draw do
   match "login" => "sessions#new", :as => "login"
   match "logout" => "sessions#destroy", :as => "logout"
   match "signup" => "users#new", :as => "signup"
+  match "checkin/:location_id" => "users#check_in", :as => "check_in"
+  match "locate_self" => "users#locate_self", :as => "locate_self"
+  match "checkout" => "users#check_out", :as => "check_out"
 
   # Dasboard
   match "dashboard" => "app#dashboard", :as => "dashboard", :via => :get

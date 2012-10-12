@@ -13,4 +13,5 @@
         %td= location.name 
         %td= location.latitude
         %td= location.longitude
-        %td= link_to 'Check who\'s here', find_nearby_people_path
+        %td= link_to 'Check who\'s here', find_nearby_people_path(:id => location.id)
+        %td= link_to '        Checkin here!', check_in_path(:location_id => location.id)

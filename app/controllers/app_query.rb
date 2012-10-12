@@ -221,7 +221,10 @@ class AppQuery
   # Output: true if the creation is successful, false otherwise
   # NOTE: This method is already implemented, but you are allowed to modify it if needed.
   def create_user(user_hash={})
-    @user = User.new(user_hash)
+    if user_hash[:password] != user_hash[:password_confirmation]
+      redirect_to signup_path
+    end
+    @user = User.new(:name => user_hash[:name], :email => user_hash[:email], :password => user_hash[:password])
     @user.save
   end
 

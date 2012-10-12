@@ -1,12 +1,14 @@
 FindMe::Application.routes.draw do
  
   # Route for /
-  root :to => "locations#index"
+  root :to => "home#index"
   
   # Misc Routes
   match "login" => "sessions#new", :as => "login"
   match "logout" => "sessions#destroy", :as => "logout"
   match "signup" => "users#new", :as => "signup"
+  match "checkin/:location_id" => "users#check_in", :as => "check_in"
+  match "locate_self" => "users#locate_self", :as => "locate_self"
 
   # Dasboard
   match "dashboard" => "app#dashboard", :as => "dashboard", :via => :get
